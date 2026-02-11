@@ -445,7 +445,7 @@ As previously mentioned, [CRAN](https://cran.r-project.org/) is the main reposit
 To see what occurs, let's try installing the `PeacoQC` [package](https://www.bioconductor.org/packages/release/bioc/html/PeacoQC.html) (which is found on Bioconductor). 
 
 ```{r}
-install.packages("PeacoQC")
+#install.packages("PeacoQC")
 ```
 
 <br>
