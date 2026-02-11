@@ -1,0 +1,33 @@
+---
+title: "Untitled"
+format: html
+---
+
+First, we install the pak library
+
+```{r}
+install.packages("pak")
+```
+
+Then, we try to install the packages suggested in the index doc
+
+
+```{r}
+pak::pkg_install("broom")
+pak::pkg_install("cytoMEM")
+#pak::pkg_install("DillonHammill/CytoExploreR")
+```
+
+First to packages (from R and Bioconductor, respectively) are fine. However, the third one gives an error because pak is unable to install a dependency (superheat >= 1.0.0).
+
+```{r}
+pak::pkg_install("superheat")
+```
+
+When we install it manually, the last version is 0.1.0. Now, we try to install it using install_github()
+
+```{r}
+install_github("DillonHammill/CytoExploreR")
+```
+
+This time, it works!
